@@ -149,6 +149,15 @@ a:hover {
   font-size: 1.1rem;
 }
 
+.skills-title {
+  width: 25%;
+  border-bottom: 1px solid gray;
+}
+
+.skills-list {
+  display: inline;
+}
+
 /*--/ Title A /--*/
 .title-box {
   margin-bottom: 4rem;
