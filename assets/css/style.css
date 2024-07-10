@@ -886,7 +886,44 @@ a:hover {
   }
 }
 
-.skill-mf span {
+.skill-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  background-color: #f8f9fa; /* Light background color on hover */
+}
+
+.skill-box img.skill-logo {
+  max-width: 100px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.skill-box:hover img.skill-logo {
+  transform: scale(1.1);
+}
+
+.skill-box h4 {
+  margin-top: 10px;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.skill-box:hover h4 {
+  color: #007bff; /* Change text color on hover */
+}
+
+
+/* .skill-mf span {
   color: #4e4e4e;
 }
 
@@ -900,7 +937,7 @@ a:hover {
 .skill-mf .progress .progress-bar {
   height: 0.7rem;
   background-color: #0078ff;
-}
+} */
 
 /*--------------------------------------------------------------
 # Services
@@ -1030,6 +1067,16 @@ a:hover {
 
 .w-title {
   font-size: 1.2rem;
+}
+
+.box-shadow-full-work {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+  .box-shadow-full-work {
+    padding: 3rem;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1483,17 +1530,7 @@ a:hover {
 
 /* skills */
 
-.skill-logo {
-  width: 70px;
-}
 
-.skill-box {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
